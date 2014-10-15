@@ -3,7 +3,7 @@
  * @ProtoMorph (http://protomorph.tk/)
  * =======================================================================
  * Copyright 2014
- * Licensed under the MIT license (http://protomorph.tk/)
+ * Licensed GNU General Public License, version 2 (GPL-2.0)
  * ======================================================================= */
 
 ;(function ($, window, document, undefined) {
