@@ -1,7 +1,7 @@
 ProtoMorph Atom
 ======================
 
-Theme for AnchorCMS
+Theme for [AnchorCMS][2]
 
 #### Requirements
 
@@ -9,6 +9,10 @@ Theme for AnchorCMS
 
 #### License
 
-[GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
+[GNU General Public License v2][GNU General Public License v2][3]
 
-© 2014 - [ProtoMorph](http://protomorph.tk/)
+© 2014 - [ProtoMorph][1]
+
+[1]: http://protomorph.tk/
+[2]: http://anchorcms.com/
+[3]: http://opensource.org/licenses/GPL-2.0tk/)
