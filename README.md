@@ -9,7 +9,7 @@ Theme for [AnchorCMS][2]
 
 #### License
 
-[GNU General Public License v2][GNU General Public License v2][3]
+[GNU General Public License v2][3]
 
 © 2014 - [ProtoMorph][1]
 
