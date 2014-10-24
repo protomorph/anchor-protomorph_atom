@@ -15,4 +15,4 @@ Theme for [AnchorCMS][2]
 
 [1]: http://protomorph.tk/
 [2]: http://anchorcms.com/
-[3]: http://opensource.org/licenses/GPL-2.0tk/)
+[3]: http://opensource.org/licenses/GPL-2.0tk/
