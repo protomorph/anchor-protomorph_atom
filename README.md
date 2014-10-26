@@ -1,4 +1,4 @@
-ProtoMorph Atom
+ProtoMorph Atom v1.0.0-RC1
 ======================
 
 Theme for [AnchorCMS][2]
