@@ -82,7 +82,7 @@ function total_articles() {
 	return Post::where(Base::table('posts.status'), '=', 'published')->count();
 }
 
-function article_pager($prev = 'Older', $next = 'Newer') {
+function article_pager() {
 	if(article_previous_url() || article_next_url()) {
 		if(article_previous_url()) {
 			$article_previous = '<li class="previous"><a href="' . article_previous_url() . '">' . $GLOBALS['atom']['article_prev'] . '</a></li>';
