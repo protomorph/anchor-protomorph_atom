@@ -676,6 +676,8 @@ textarea:focus {
 					box-shadow: 0 3px 6px rgba(0,0,0,.125) inset;
 }
 
+textarea { resize: vertical; }
+
 .comment-form {
 	padding-top: 20px;
 	margin-top: 20px;
@@ -694,7 +696,7 @@ textarea:focus {
 	top: 0;
 	left: 0;
 	z-index: -1;
-	padding: 6px 9px;
+	padding: 5px 9px;
 	opacity: 0;
 	-webkit-transform: translateX(0%);
 					transform: translateX(0%);
