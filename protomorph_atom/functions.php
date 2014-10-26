@@ -1,11 +1,19 @@
 <?php
 /* =======================================================================
- * Protomorph: Version 1.0.0
- * @ProtoMorph (http://protomorph.cf/)
+ * Protomorph Atom: Version 1.0.0
+ * @ProtoMorph (http://protomorph.tk/)
  * =======================================================================
  * Copyright 2014
- * Licensed under the MIT license (http://protomorph.cf/)
+ * Licensed under the MIT license (http://protomorph.tk/)
  * ======================================================================= */
+$GLOBALS['atom'] = [
+	'article_next'		=> 'Newer',
+	'article_prev'		=> 'Older',
+	'gravatar_rating'	=> 'g',			// Gravatar rating [ g | pg | r | x ].
+	'gravatar_type'		=> 'retro',		// Gravatar type [ mm | identicon | monsterid | wavatar | retro ].
+	'twitter_user'		=> 'anchorcms',	// Twitter username or leave blank to disable.
+];
+
 function numeral($number, $hideIfOne = false) {
 	if($hideIfOne === true and $number == 1) {
 		return '';
@@ -60,7 +68,7 @@ function relative_time($date) {
 }
 
 function twitter_account() {
-	return site_meta('twitter', 'anchorcms');
+	return site_meta('twitter', $GLOBALS['atom']['twitter_user']);
 }
 
 function twitter_url() {
@@ -77,13 +85,13 @@ function total_articles() {
 function article_pager($prev = 'Older', $next = 'Newer') {
 	if(article_previous_url() || article_next_url()) {
 		if(article_previous_url()) {
-			$article_previous = '<li class="previous"><a href="' . article_previous_url() . '">' . $prev . '</a></li>';
+			$article_previous = '<li class="previous"><a href="' . article_previous_url() . '">' . $GLOBALS['atom']['article_prev'] . '</a></li>';
 		} else {
 			$article_previous = false;
 		}
 
 		if(article_next_url()) {
-			$article_next_url = '<li class="next"><a href="' . article_next_url() . '">' . $next . '</a></li>';
+			$article_next_url = '<li class="next"><a href="' . article_next_url() . '">' . $GLOBALS['atom']['article_next'] . '</a></li>';
 		} else {
 			$article_next_url = false;
 		}
@@ -101,5 +109,5 @@ function total_article_comments() {
 function comment_avatar($email) {
 	$hash = hash('md5', strtolower(trim($email)));
 
-	return 'http://www.gravatar.com/avatar/' . $hash . '?r=g&d=retro';
+	return 'http://www.gravatar.com/avatar/' . $hash . '?r=' . $GLOBALS['fluid']['gravatar_rating'] . '&d=' . $GLOBALS['fluid']['gravatar_type'];
 }
