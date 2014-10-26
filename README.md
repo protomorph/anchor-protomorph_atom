@@ -9,10 +9,8 @@ Theme for [AnchorCMS][2]
 
 ### Installing
 
-.1 Copy "protomorph_atom" folder to your themes folder then enable in admin -> Extend -> Site Metadata
-.2 Open protomorph_atom/functions.php and adjust settings to your liking
-
-Definable
+1. Copy "protomorph_atom" folder to your themes folder then enable in admin -> Extend -> Site Metadata
+2. Open protomorph_atom/functions.php and adjust settings to your liking
  - "article_next" text
  - "article_prev" text
  - "gravatar_rating" [ g | pg | r | x ]
