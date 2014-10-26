@@ -109,5 +109,5 @@ function total_article_comments() {
 function comment_avatar($email) {
 	$hash = hash('md5', strtolower(trim($email)));
 
-	return 'http://www.gravatar.com/avatar/' . $hash . '?r=' . $GLOBALS['fluid']['gravatar_rating'] . '&d=' . $GLOBALS['fluid']['gravatar_type'];
+	return 'http://www.gravatar.com/avatar/' . $hash . '?r=' . $GLOBALS['atom']['gravatar_rating'] . '&d=' . $GLOBALS['atom']['gravatar_type'];
 }
