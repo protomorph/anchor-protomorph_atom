@@ -15,6 +15,9 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="<?php echo site_name(); ?>">
 	<meta property="og:image" content="<?php echo full_url(theme_url('css/img/og_image.png')); ?>">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="152">
+	<meta property="og:image:height" content="152">
 	<meta property="og:url" content="<?php echo full_url(e(current_url())); ?>">
 	<meta property="og:site_name" content="<?php echo site_name(); ?>">
 	<meta property="og:description" content="<?php echo site_description(); ?>">
@@ -25,7 +28,13 @@
 	<meta name="twitter:description" content="<?php echo site_description(); ?>">
 	<meta name="twitter:image" content="<?php echo full_url(theme_url('css/img/og_image.png')); ?>">
 
+	<meta itemprop="name" content="<?php echo site_name(); ?>">
+	<meta itemprop="description" content="<?php echo page_title('Page not found'); ?>">
+	<meta itemprop="image" content="<?php echo full_url(theme_url('css/img/og_image.png')); ?>">
+
 	<title><?php echo page_title('Page not found'); ?> - <?php echo site_name(); ?></title>
+
+	<link rel="canonical" href="<?php echo full_url(e(current_url())); ?>">
 
 	<link rel="icon" sizes="16x16 32x32 48x48 64x64" href="<?php echo theme_url('css/img/favicon.ico'); ?>" />
 
