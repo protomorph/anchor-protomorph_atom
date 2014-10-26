@@ -628,9 +628,9 @@ article.article > footer > span { display: block; }
 	display: block;
 	padding: 4px 14px;
 	background-color: #ffffff;
-	border: 2px solid #e3e3e3;
+	border: 1px solid #e3e3e3;
 	color: #bbbbbb;
-	font-weight: 600;
+	font-weight: 400;
 	text-decoration: none;
 	-webkit-transition: all .15s cubic-bezier(0.645, 0.045, 0.355, 1);
 					transition: all .15s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -658,7 +658,7 @@ textarea {
 	padding: 4px 8px;
 	width: 100%;
 	background-color: transparent;
-	border: 2px solid #e3e3e3;
+	border: 1px solid #e3e3e3;
 	-webkit-box-sizing: border-box;
 		 -moz-box-sizing: border-box;
 					box-sizing: border-box;
@@ -715,7 +715,7 @@ textarea:focus {
 .btn {
 	padding: 4px 10px;
 	background-color: #ffffff;
-	border: 2px solid #12a3eb;
+	border: 1px solid #12a3eb;
 	color: #12a3eb;
 	font-weight: 600;
 	text-decoration: none;
