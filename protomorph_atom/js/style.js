@@ -9,6 +9,14 @@
 ;(function ($, window, document, undefined) {
 	"use strict";
 
+	// options
+	var options = {
+		animate: 600,	// Animate duration.
+		duration: 300,	// Fade in/out time.
+		ease: 'swing',	// Ease type.
+		offset: 200		// To top show/hide offset.
+	};
+
 	// DROPDOWN MENU
 	// =============
 
@@ -18,10 +26,10 @@
 
 		if (!$(this).parent('.dropdown').hasClass('open')) {
 			$(this).next('.dropdown-menu')
-				.slideUp(300);
+				.slideUp(options.duration, options.ease);
 		} else {
 			$(this).next('.dropdown-menu')
-				.slideDown(300);
+				.slideDown(options.duration, options.ease);
 		}
 
 		e.preventDefault();
@@ -31,7 +39,7 @@
 		if (!$(e.target).is('.dropdown-menu') &&
 			!$(e.target).parents().is('.dropdown')
 		) {
-			$('.dropdown-menu').slideUp(300);
+			$('.dropdown-menu').slideUp(options.duration, options.ease);
 
 			$('.dropdown').removeClass('open');
 		}
@@ -78,19 +86,19 @@
 	// TO TOP BUTTON
 	// =============
 	$(window).on('scroll', function() {
-		if ($(this).scrollTop() > 200) {
+		if ($(this).scrollTop() > options.offset) {
 			$('.scroll-up').stop(true, true)
-				.fadeIn(300);
-		} else if ($(this).scrollTop() <= 200) {
+				.fadeIn(options.duration, options.ease);
+		} else if ($(this).scrollTop() <= options.offset) {
 			$('.scroll-up').stop(true, true)
-				.fadeOut(300);
+				.fadeOut(options.duration, options.ease);
 		}
 	});
 
 	$('.scroll-up').on('click touchstart', function(e) {
 		$('html, body').animate({scrollTop: 0},
-			600,
-			'swing'
+			options.animate,
+			options.ease
 		);
 
 		e.preventDefault();
