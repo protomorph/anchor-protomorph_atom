@@ -1,8 +1,9 @@
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
 html {
 	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-			-ms-text-size-adjust: 100%;
 }
 
 body { margin: 0; }
@@ -16,6 +17,7 @@ footer,
 header,
 hgroup,
 main,
+menu,
 nav,
 section,
 summary { display: block; }
@@ -36,7 +38,7 @@ audio:not([controls]) {
 [hidden],
 template { display: none; }
 
-a { background: transparent; }
+a { background-color: transparent; }
 
 a:active,
 a:hover { outline: 0; }
@@ -49,28 +51,28 @@ strong { font-weight: bold; }
 dfn { font-style: italic; }
 
 h1 {
-	margin: .67em 0;
 	font-size: 2em;
+	margin: 0.67em 0;
 }
 
 mark {
-	color: #000;
 	background: #ff0;
+	color: #000;
 }
 
 small { font-size: 80%; }
 
 sub,
 sup {
-	position: relative;
 	font-size: 75%;
 	line-height: 0;
+	position: relative;
 	vertical-align: baseline;
 }
 
-sup { top: -.5em; }
+sup { top: -0.5em; }
 
-sub { bottom: -.25em; }
+sub { bottom: -0.25em; }
 
 img { border: 0; }
 
@@ -79,10 +81,9 @@ svg:not(:root) { overflow: hidden; }
 figure { margin: 1em 40px; }
 
 hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
 	height: 0;
-	-webkit-box-sizing: content-box;
-		 -moz-box-sizing: content-box;
-					box-sizing: content-box;
 }
 
 pre { overflow: auto; }
@@ -100,14 +101,12 @@ input,
 optgroup,
 select,
 textarea {
-	margin: 0;
-	font: inherit;
 	color: inherit;
+	font: inherit;
+	margin: 0;
 }
 
-button {
-overflow: visible;
-}
+button { overflow: visible; }
 
 button,
 select { text-transform: none; }
@@ -125,17 +124,15 @@ html input[disabled] { cursor: default; }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-	padding: 0;
 	border: 0;
+	padding: 0;
 }
 
-input { line-height: normal; }
+input { line-height: normal;  }
 
 input[type="checkbox"],
 input[type="radio"] {
-	-webkit-box-sizing: border-box;
-		 -moz-box-sizing: border-box;
-					box-sizing: border-box;
+	box-sizing: border-box;
 	padding: 0;
 }
 
@@ -143,24 +140,24 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button { height: auto; }
 
 input[type="search"] {
-	-webkit-box-sizing: content-box;
-		 -moz-box-sizing: content-box;
-					box-sizing: content-box;
 	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 
 fieldset {
-	padding: .35em .625em .75em;
-	margin: 0 2px;
 	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
 }
 
 legend {
-	padding: 0;
 	border: 0;
+	padding: 0;
 }
 
 textarea { overflow: auto; }
@@ -168,8 +165,8 @@ textarea { overflow: auto; }
 optgroup { font-weight: bold; }
 
 table {
-	border-spacing: 0;
 	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 td,
