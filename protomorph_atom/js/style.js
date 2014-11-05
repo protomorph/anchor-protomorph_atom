@@ -70,6 +70,16 @@
 		.trigger('check-value');
 	});
 
+	// HIGHLIGHT.JS
+	// ============
+	hljs.configure({
+		tabReplace: '	'
+	});
+
+	$('pre code, pre').each(function (i, block) {
+		hljs.highlightBlock(block);
+	});
+
 	// OFF CANVAS NAVBAR
 	// =================
 
