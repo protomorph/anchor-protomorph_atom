@@ -9,6 +9,14 @@ A simple flat theme with an off canvas menu for [AnchorCMS][2].
 
 - AnchorCMS 0.9.2
 
+#### Features
+
+- Scroll to top of page.
+- Off canvas menu.
+- Syntax highlighting (highlight.js).
+- Gravatar for comments.
+- normalize.css v3.0.2.
+
 #### Installing
 
 1. Download [ProtoMorph Atom][4]
