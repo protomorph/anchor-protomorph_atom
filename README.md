@@ -27,7 +27,7 @@ A simple flat theme with an off canvas menu for [AnchorCMS][2].
 
 © 2014 - [ProtoMorph][1]
 
-[1]: http://protomorph.tk/
+[1]: http://protomorph.cf/
 [2]: http://anchorcms.com/
 [3]: http://opensource.org/licenses/GPL-2.0
 [4]: https://github.com/protomorph/anchor-protomorph_atom/archive/master.zip
