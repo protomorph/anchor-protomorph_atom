@@ -1,6 +1,6 @@
 /* =======================================================================
  * Protomorph Atom: Version 1.0.0
- * @ProtoMorph (http://protomorph.tk/)
+ * @ProtoMorph (http://protomorph.cf/)
  * =======================================================================
  * Copyright 2014
  * Licensed GNU General Public License, version 2 (GPL-2.0)
