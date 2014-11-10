@@ -134,8 +134,6 @@
 			</ul>
 
 			<footer class="footer clearfix" id="top">
-				<small><?php echo site_name(); ?>&copy; <?php echo date('Y'); ?>. All rights reserved.</small>
-
 				<ul class="foot-links" role="navigation">
 					<li><a href="<?php echo rss_url(); ?>">RSS</a></li>
 
@@ -147,6 +145,8 @@
 
 					<li><a href="/">Home</a></li>
 				</ul>
+
+				<small><?php echo site_name(); ?>&copy; <?php echo date('Y'); ?>. All rights reserved.</small>
 			</footer>
 		</div>
 	</nav>
