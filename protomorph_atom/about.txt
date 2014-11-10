@@ -1,5 +1,5 @@
 Theme name:    Protomorph Atom
 Description:   Flat design theme for Anchor CMS.
 Author name:   Protomorph
-Author site:   http://protomorph.tk/
-License:       http://protomorph.tk/
+Author site:   http://protomorph.cf/
+License:       http://protomorph.cf/
