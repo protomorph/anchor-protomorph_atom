@@ -3,34 +3,34 @@
 <html class="no-js" lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta http-equiv="imagetoolbar" content="no">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="imagetoolbar" content="no" />
 
-	<meta name="generator" content="Anchor CMS">
-	<meta name="description" content="<?php echo site_description(); ?>">
+	<meta name="generator" content="Anchor CMS" />
+	<meta name="description" content="<?php echo site_description(); ?>" />
 
-	<meta property="og:locale" content="en_GB">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="<?php echo site_name(); ?>">
-	<meta property="og:image" content="<?php echo full_url(theme_url('css/img/og_image.png')); ?>">
-	<meta property="og:image:type" content="image/png">
-	<meta property="og:image:width" content="152">
-	<meta property="og:image:height" content="152">
-	<meta property="og:url" content="<?php echo full_url(e(current_url())); ?>">
-	<meta property="og:site_name" content="<?php echo site_name(); ?>">
-	<meta property="og:description" content="<?php echo site_description(); ?>">
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="<?php echo site_name(); ?>" />
+	<meta property="og:image" content="<?php echo full_url(theme_url('css/img/og_image.png')); ?>" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="152" />
+	<meta property="og:image:height" content="152" />
+	<meta property="og:url" content="<?php echo full_url(e(current_url())); ?>" />
+	<meta property="og:site_name" content="<?php echo site_name(); ?>" />
+	<meta property="og:description" content="<?php echo site_description(); ?>" />
 	
 	<meta name="twitter:card" content="website">
-	<meta name="twitter:url" content="<?php echo full_url(e(current_url())); ?>">
-	<meta name="twitter:title" content="<?php echo page_title('Page not found'); ?>">
-	<meta name="twitter:description" content="<?php echo site_description(); ?>">
-	<meta name="twitter:image" content="<?php echo full_url(theme_url('css/img/og_image.png')); ?>">
+	<meta name="twitter:url" content="<?php echo full_url(e(current_url())); ?>" />
+	<meta name="twitter:title" content="<?php echo page_title('Page not found'); ?>" />
+	<meta name="twitter:description" content="<?php echo site_description(); ?>" />
+	<meta name="twitter:image" content="<?php echo full_url(theme_url('css/img/og_image.png')); ?>" />
 
-	<meta itemprop="name" content="<?php echo site_name(); ?>">
-	<meta itemprop="description" content="<?php echo page_title('Page not found'); ?>">
-	<meta itemprop="image" content="<?php echo full_url(theme_url('css/img/og_image.png')); ?>">
+	<meta itemprop="name" content="<?php echo site_name(); ?>" />
+	<meta itemprop="description" content="<?php echo page_title('Page not found'); ?>" />
+	<meta itemprop="image" content="<?php echo full_url(theme_url('css/img/og_image.png')); ?>" />
 
 	<title><?php echo page_title('Page not found'); ?> - <?php echo site_name(); ?></title>
 
@@ -42,10 +42,10 @@
 		<link rel="shortcut icon" href="<?php echo theme_url('css/img/favicon.ico'); ?>" />
 	<![endif]-->
 
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="white">
-	<meta name="apple-mobile-web-app-title" content="<?php echo site_name(); ?>">
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="white" />
+	<meta name="apple-mobile-web-app-title" content="<?php echo site_name(); ?>" />
 
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo theme_url('css/img/apple-touch-icon-57x57.png'); ?>" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo theme_url('css/img/apple-touch-icon-114x114.png'); ?>" />
@@ -82,12 +82,12 @@
 
 	<script>var base = '<?php echo theme_url(); ?>';</script>
 
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic|Inconsolata:400,700" rel="stylesheet">
-	<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic|Inconsolata:400,700" />
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" />
 	<!-- A complete list of styles can be found at (https://highlightjs.org/static/test.html) -->
-	<link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="<?php echo theme_url('/css/normalize.css'); ?>">
-	<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css" />
+	<link rel="stylesheet" href="<?php echo theme_url('/css/normalize.css'); ?>" />
+	<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>" />
 
 	<?php if(customised() and article_css()): ?>
 	<style><?php echo article_css(); ?></style>
