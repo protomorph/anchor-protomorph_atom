@@ -5,20 +5,15 @@
  * Copyright 2014
  * Licensed GNU General Public License, version 2 (GPL-2.0)
  * ======================================================================= */
-@-ms-viewport {
-	width: device-width;
-	zoom: 1;
-}
+@-webkit-viewport	{ width: device-width; }
 
-@-o-viewport {
-	width: device-width;
-	zoom: 1;
-}
+@-moz-viewport		{ width: device-width; }
 
-@viewport {
-	width: device-width;
-	zoom: 1;
-}
+@-ms-viewport			{ width: device-width; }
+
+@-o-viewport			{ width: device-width; }
+
+@viewport					{ width: device-width; }
 
 ::-moz-selection {
 	background: #12a3eb;
