@@ -73,6 +73,13 @@
 
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
 
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic|Inconsolata:400,700" />
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" />
+	<!-- A complete list of styles can be found at (https://highlightjs.org/static/test.html) -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css" />
+	<link rel="stylesheet" href="<?php echo theme_url('/css/normalize.css'); ?>" />
+	<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>" />
+
 	<!--[if lt IE 9]>
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -81,13 +88,6 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
 
 	<script>var base = '<?php echo theme_url(); ?>';</script>
-
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic|Inconsolata:400,700" />
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" />
-	<!-- A complete list of styles can be found at (https://highlightjs.org/static/test.html) -->
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css" />
-	<link rel="stylesheet" href="<?php echo theme_url('/css/normalize.css'); ?>" />
-	<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>" />
 
 	<?php if(customised() and article_css()): ?>
 	<style><?php echo article_css(); ?></style>
