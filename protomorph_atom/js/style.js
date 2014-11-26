@@ -27,7 +27,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 	// DROPDOWN MENU
 	// =============
 
-	$('[data-toggle="dropdown"]').on('click touchstart', function(e) {
+	$('[data-toggle="dropdown"]').on('click touchstart', function (e) {
 		$(this).parent('.dropdown')
 			.toggleClass('open');
 
@@ -42,7 +42,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 		e.preventDefault();
 	});
 
-	$('body').on('click touchstart', function(e) {
+	$('body').on('click touchstart', function (e) {
 		if (!$(e.target).is('.dropdown-menu') &&
 			!$(e.target).parents().is('.dropdown')
 		) {
@@ -55,8 +55,8 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 	// FLOAT LABELS
 	// ============
 
-	$('html, body').find('.float-input').each(function() {
-		$(this).on('check-value', function() {
+	$('html, body').find('.float-input').each(function () {
+		$(this).on('check-value', function () {
 			var _label = $(this).next('.float-label');
 
 			if (this.value !== '') {
@@ -65,13 +65,13 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 				_label.removeClass('in');
 			}
 		})
-		.on('keyup', function() {
+		.on('keyup', function () {
 			$(this).trigger('check-value');
 		})
-		.on('input propertychange', function() {
+		.on('input propertychange', function () {
 			$(this).trigger('check-value');
 		})
-		.on('textarea propertychange', function() {
+		.on('textarea propertychange', function () {
 			$(this).trigger('check-value');
 		})
 		.trigger('check-value');
@@ -91,11 +91,11 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 	// OFF CANVAS NAVBAR
 	// =================
 
-	$('[data-toggle="off-canvas"]').on('click touchstart', function() {
+	$('[data-toggle="off-canvas"]').on('click touchstart', function () {
 		$('.page-body').toggleClass('in');
 	});
 
-	$('body').on('click touchstart', function(e) {
+	$('body').on('click touchstart', function (e) {
 		if (!$(e.target).is('[data-toggle="off-canvas"]') &&
 			!$(e.target).is('.navbar-off-canvas') &&
 			!$(e.target).parents().is('.navbar-off-canvas')) $('.page-body').removeClass('in');
@@ -103,7 +103,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
 	// TO TOP BUTTON
 	// =============
-	$(window).on('scroll', function() {
+	$(window).on('scroll', function () {
 		if ($(this).scrollTop() > options.offset) {
 			$('.scroll-up').stop(true, true)
 				.fadeIn(options.duration, options.ease);
@@ -113,7 +113,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 		}
 	});
 
-	$('.scroll-up').on('click touchstart', function(e) {
+	$('.scroll-up').on('click touchstart', function (e) {
 		$('html, body').animate({scrollTop: 0},
 			options.animate,
 			options.ease
