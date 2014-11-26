@@ -154,9 +154,7 @@
 	<div class="page-body">
 		<header class="header">
 			<button class="toggle" type="button" data-toggle="off-canvas">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
+				<span class="navigation-icon"></span>
 			</button>
 
 			<a id="logo" href="<?php echo base_url(); ?>">
