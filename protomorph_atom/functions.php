@@ -1,10 +1,10 @@
 <?php
 /* =======================================================================
  * Protomorph Atom: Version 1.0.0
- * @ProtoMorph (http://protomorph.tk/)
+ * @ProtoMorph (http://protomorph.cf/)
  * =======================================================================
  * Copyright 2014
- * Licensed under the MIT license (http://protomorph.tk/)
+ * Licensed under the MIT license (http://protomorph.cf/)
  * ======================================================================= */
 $GLOBALS['atom'] = [
 	'article_next'		=> 'Newer',
@@ -15,12 +15,13 @@ $GLOBALS['atom'] = [
 ];
 
 function numeral($number, $hideIfOne = false) {
-	if($hideIfOne === true and $number == 1) {
+	if ($hideIfOne === true and $number == 1) {
 		return '';
 	}
 	
 	$test = abs($number) % 10;
 	$ext = ((abs($number) % 100 < 21 and abs($number) % 100 > 4) ? 'th' : (($test < 4) ? ($test < 3) ? ($test < 2) ? ($test < 1) ? 'th' : 'st' : 'nd' : 'rd' : 'th'));
+
 	return $number . $ext;
 }
 
@@ -33,7 +34,7 @@ function pluralise($amount, $str, $alt = '') {
 }
 
 function relative_time($date) {
-	if(is_numeric($date)) $date = '@' . $date;
+	if (is_numeric($date)) $date = '@' . $date;
 
 	$user_timezone = new DateTimeZone(Config::app('timezone'));
 	$date = new DateTime($date, $user_timezone);
@@ -43,7 +44,7 @@ function relative_time($date) {
 
 	$elapsed = $now->format('U') - $date->format('U');
 
-	if($elapsed <= 1) {
+	if ($elapsed <= 1) {
 		return 'Just now';
 	}
 
@@ -57,10 +58,10 @@ function relative_time($date) {
 		1 => 'second'
 	);
 
-	foreach($times as $seconds => $title) {
+	foreach ($times as $seconds => $title) {
 		$rounded = $elapsed / $seconds;
 
-		if($rounded > 1) {
+		if ($rounded > 1) {
 			$rounded = round($rounded);
 			return $rounded . ' ' . pluralise($rounded, $title) . ' ago';
 		}
@@ -83,14 +84,14 @@ function total_articles() {
 }
 
 function article_pager() {
-	if(article_previous_url() || article_next_url()) {
-		if(article_previous_url()) {
+	if (article_previous_url() || article_next_url()) {
+		if (article_previous_url()) {
 			$article_previous = '<li class="previous"><a href="' . article_previous_url() . '">' . $GLOBALS['atom']['article_prev'] . '</a></li>';
 		} else {
 			$article_previous = false;
 		}
 
-		if(article_next_url()) {
+		if (article_next_url()) {
 			$article_next_url = '<li class="next"><a href="' . article_next_url() . '">' . $GLOBALS['atom']['article_next'] . '</a></li>';
 		} else {
 			$article_next_url = false;
